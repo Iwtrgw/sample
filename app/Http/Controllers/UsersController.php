@@ -34,7 +34,12 @@ class UsersController extends Controller {
 
 	//用户个人中心
 	public function show(User $user) {
-		return view('users.show', compact('user'));
+        //查询用户个人动态按发布时间排序
+        $statuses = $user->statuses()
+                         ->orderBy('created_at','desc')
+                         ->paginate(20);
+
+		return view('users.show', compact('user','statuses'));
 	}
 
 	//注册动作
