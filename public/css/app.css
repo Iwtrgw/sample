@@ -8570,6 +8570,12 @@ section.user_info h1 {
 
 /* forms */
 
+#follow_form button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 25px;
+}
+
 input,
 textarea,
 select,
@@ -8667,10 +8673,6 @@ input {
 aside textarea {
   height: 100px;
   margin-bottom: 5px;
-}
-
-.status_form {
-  margin-top: 20px;
 }
 
 aside textarea {

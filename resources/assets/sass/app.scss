@@ -208,6 +208,12 @@ section.user_info{
 
 /* forms */
 
+#follow_form button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px;
+}
+
 input,textarea,select,.uneditable-input{
     border: 1px solid #bbb;
     margin-bottom: 15px;
@@ -297,10 +303,6 @@ aside {
     height: 100px;
     margin-bottom: 5px;
   }
-}
-
-.status_form {
-  margin-top: 20px;
 }
 
 aside {
